@@ -15,3 +15,13 @@ function opacité1(event) {
     if (event){this.style.opacity=1;}
     else{this.style.opacity=0;}
 };
+
+function toggleMenu() {
+			  var menu = document.getElementById('pagesMenu');
+			  if (menu.style.display === 'block') {
+				menu.style.display = 'none';
+			  } else {
+				menu.style.display = 'block';
+			  }
+}
+		 
