@@ -1,0 +1,195 @@
+ body{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-image:url(fond.png); */
+    background-color: white;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px 0 0 0;
+    height: 100vh; /* Hauteur égale à la taille de la fenêtre du navigateur */   
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale si le contenu dépasse */
+}
+
+main
+{
+    padding-top: 80px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 30px; /* Padding de 30px à gauche et à droite */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur */
+
+}
+
+#logo {
+    margin-right: auto; /* Ajouté pour décaler le logo vers la gauche */
+}
+
+#logo img {
+    width: 60px;
+}
+
+nav {
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:rgb(245, 177, 164);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+nav a:focus {
+    outline: 2px solid  rgb(113, 58, 58); /* Améliore la visibilité des liens au focus */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Améliore l'interactivité */
+}
+
+table {
+margin: auto;
+text-align: center;
+font-size:18px;
+border-spacing:5px;
+margin-top:20px;
+}
+
+#index{
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgb(113, 58, 58);
+    border-collapse: collapse;
+}
+
+#cellindex{
+    border: 2px solid rgb(113, 58, 58);
+}
+
+#ingrédients
+{
+font-size:18px;
+font-family: Javanese Text;
+text-align:center;
+}
+
+h1
+{  
+font-size:45px; 
+text-align: center ;
+font-family: 'Javanese Text','Comic', cursive, sans-serif;
+text-decoration: underline;
+color:rgb(130 29 48);
+}
+
+h2		
+{
+font-size:20px; 
+text-align:center;
+text-decoration: underline;
+font-family: 'Javanese Text';
+color:rgb(255, 185, 171);
+}
+
+h3 
+{
+font-size:18px; 
+font-family: 'Javanese Text';
+margin-left: 250px;
+margin-right:245px;
+}
+
+p
+{
+    font-size:18px;
+    line-height: 25px;
+    text-align:center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1 > img{
+    height:100px;
+}
+
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+   }
+
+.img
+{
+width:200px;
+height:auto;
+
+}
+
+.divimg{
+    margin-left: 500px;
+    }
+
+.cadre
+{ 
+    display: flex; /* Utilisé pour aligner les enfants horizontalement */
+    justify-content: center; /* Centrer les enfants horizontalement */
+    gap: 20px; /* Espacement entre les divs cadreRecette */
+    width: 80%;
+}
+
+.cadreRecette
+{  
+    display: flex; /* Ajouté pour centrer le contenu */
+    flex-direction: column; /* Ajouté pour disposer les éléments en colonne */
+    align-items: center; /* Ajouté pour centrer horizontalement */
+    justify-content: center; /* Ajouté pour centrer verticalement */
+    margin-inline-start:95px ;
+    margin-bottom: 25px;
+    background-color:rgb(130 29 48);
+    width: 330px;
+    height: 210px;
+    border-radius: 30px; 
+    text-align: center; /* Ajouté pour centrer le texte */
+}
+
+.cadrePhoto
+{
+    width:190px;
+    height:145px;  
+    opacity:1;
+}
+
+a {
+    color:rgb(245, 177, 164);
+}
+a:visited,a:active{
+    color:rgb(215, 145, 129);
+}
+
+
+.element {
+    font-size: 18px;
+    font-family: 'Javanese Text';
+}

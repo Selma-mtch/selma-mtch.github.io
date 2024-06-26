@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Recettes chocolat </title>
+	<link rel="stylesheet" type = "text/css" href="/css/style_generale.css" />
+</head>	 
+
+<body> 
+	<header id="navbar">
+		<div id="logo">
+			<img src="../img/logo.png" alt="Logo SM_Pastry">
+		</div>
+		
+		<nav id="nav-links">
+			<a href="menue.html"> Menu </a>
+			<a href="toutes tartes.html"> Recettes tartes </a>
+			<a href="pour le café.html"> Pour le café </a>
+			<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+			<a href="anniversaire.html">  Recette anniversaire </a>
+			<a href="entremets.html"> Recette entremets </a>
+			<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+		</nav>
+		<div class="menuButton" onclick="toggleMenu()">☰</div>
+	</header>
+
+	<div id="pagesMenu">
+		<nav>
+		<a href="menue.html">Menu</a>
+		<a href="toutes tartes.html">Recettes tartes</a>
+		<a href="pour le café.html">Pour le café</a>
+		<a href="petit déjeuner.html">Recettes petit déjeuner</a>
+		<a href="anniversaire.html">Recette anniversaire</a>
+		<a href="entremets.html">Recette entremets</a>
+		<a href="hors oeuvre.html">Hors d'oeuvre</a>
+		</nav>
+	</div>
+	
+
+	<main id="content">
+ 		<h1> Recette au chocolat </h1>
+
+		<div class="cadre">
+			<div class="cadreRecette"> 
+				<a href="Kinder Délice.html"> Kinder Délice</a> </br>
+				<a href="Kinder Délice.html"><img src= "/img/KinderDelice.jpg" alt='Image tartes citron' class="cadrePhoto"/></a>
+			</div> 
+
+		<div class="cadreRecette">
+			<a href="#">Fraisier coque chocolat </a> </br>
+			<a href="#"><img src= "/img/.jpg" alt='Image Fraisier' class="cadrePhoto"/> </a>
+		</div>
+
+		<div class="cadreRecette">
+			<a href="#">Génoise chocolat-chantilly</a> </br>
+			<a href="#"><img src= "/img/.jpg" alt='Image chocolat-chantilly' class="cadrePhoto"/></a>		
+		</div>
+
+		<div class="cadreRecette">
+			<a href="3chocolats.html"> Entremet 3 chocolats </a> </br>
+			<a href="3chocolats.html"><img src= "/img/3chocolats coté.jpg" alt='Image trois chocolat' class="cadrePhoto"/></a>
+		</div>
+
+		<div class="cadreRecette">
+			<a href="gateau_pleure.html"> Gateau qui pleure </a> </br>
+			<a href="gateau_pleure.html"><img src= "/img/gateau_pleure.jpg" alt='Image gateau qui pleure' class="cadrePhoto"/></a>
+		</div>
+	</div>
+</main>
+
+<script src="/js/café.js"></script>
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById('pagesMenu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>

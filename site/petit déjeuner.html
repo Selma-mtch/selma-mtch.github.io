@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Petit déjeuner </title>
+	<link rel="stylesheet" type = "text/css" href="/css/style_generale.css" />
+</head>	
+<body> 		
+	<header id="navbar">
+		<div id="logo">
+            <img src="../img/logo.png" alt="Logo SM_Pastry">
+        </div>
+
+		<nav id="nav-links">
+			<a href="menue.html"> Menu </a>
+			<a href="toutes tartes.html"> Recettes tartes </a>
+			<a href="pour le café.html"> Pour le café </a>
+			<a href="au chocolat.html"> Recettes au chocolat </a>
+			<a href="anniversaire.html">  Recette anniversaire </a>
+			<a href="entremets.html"> Recette entremets </a>
+			<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+		</nav>
+		<div class="menuButton" onclick="toggleMenu()">☰</div>
+	</header>
+
+	<div id="pagesMenu">
+		<nav>
+		<a href="menue.html">Menu</a>
+		<a href="toutes tartes.html">Recettes tartes</a>
+		<a href="pour le café.html">Pour le café</a>
+		<a href="au chocolat.html"> Recettes au chocolat </a>
+		<a href="anniversaire.html">Recette anniversaire</a>
+		<a href="entremets.html">Recette entremets</a>
+		<a href="hors oeuvre.html">Hors d'oeuvre</a>
+		</nav>
+	</div>
+
+	<main id="content">
+		<h1> Recette pour le Petit Dejeuner </h1>
+		<div class="cadre">
+			<div class="cadreRecette"> 
+				<a href="site Pitch.html"> Brioche chocolat-Pitch </a> </br>
+				<a href="site Pitch.html"><img src= "/img/image petitDejeuner.jpg" alt='Image brioche pépites de chocolats' class="cadrePhoto"/></a>
+			</div>
+		
+			<div class="cadreRecette"> 
+				<a href="barres de céréales.html"> Barres de céréales </a> </br>
+				<a href="barres de céréales.html"> <img src= "/img/image barre de cereales.jpg" alt='Image barres de céréales au chocolat' class="cadrePhoto"/> </a>
+			</div> 
+
+			<div class="cadreRecette"> 
+				<a href="pancakes.html"> Pancakes </a> </br>
+				<a href="pancakes.html"> <img src= "/img/image pancakes.jpg" alt='Image pile de pancakes' class="cadrePhoto"/> </a>
+			</div>
+		</div>
+	</main>
+	<script src="/js/café.js"></script>
+	<script>
+		function toggleMenu() {
+		  var menu = document.getElementById('pagesMenu');
+		  if (menu.style.display === 'block') {
+			menu.style.display = 'none';
+		  } else {
+			menu.style.display = 'block';
+		  }
+		}
+	  </script>
+</body>
+</html>
