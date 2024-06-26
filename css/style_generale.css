@@ -166,7 +166,7 @@ a:visited,a:active{
 }
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 865px) {
     .menuButton {
         display: block !important;
     }
@@ -208,13 +208,13 @@ a:visited,a:active{
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 866px) {
     #pagesMenu {
         display: none;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 866px) {
     nav {
         flex-direction: column;
         gap: 10px;
