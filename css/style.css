@@ -115,8 +115,15 @@ h3
 {
 font-size:18px; 
 font-family: 'Javanese Text';
-margin-left: 250px;
-margin-right:245px;
+font-weight: bold;
+}
+
+.instructions{
+    font-size:18px; 
+    font-family: 'Javanese Text';
+    font-weight: bold;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 p
@@ -188,7 +195,12 @@ a:visited,a:active{
     color:rgb(215, 145, 129);
 }
 
-@media screen and (max-width: 1029px) {
+.element {
+    font-size: 18px;
+    font-family: 'Javanese Text';
+}
+
+@media screen and (max-width:1015px) { /* Pour les grands petits écrans */
     .menuButton {
         display: block !important;
     }
@@ -228,15 +240,23 @@ a:visited,a:active{
     #pagesMenu nav a:last-child {
         border-bottom: none;
     }
-}
 
-@media screen and (min-width: 1030px) {
-    #pagesMenu {
-        display: none;
+    .instructions {
+        margin: 0 !important; /* Supprimer les marges */
     }
 }
 
-@media (max-width: 1030px) {
+@media screen and (min-width: 1016px) {  /* Pour les grands écrans écrans */
+    #pagesMenu {
+        display: none;  /* Cacher la navigation des petis écrans */
+    }
+
+    .menuButton {
+        display: none; /* Cacher le menuButton */
+    }
+}
+
+@media (max-width: 1016px) { /* Pour les petits écrans écrans */
     nav {
         flex-direction: column;
         gap: 10px;
@@ -250,11 +270,4 @@ a:visited,a:active{
     nav.active {
         display: flex;
     }
-
-}
-
-
-.element {
-    font-size: 18px;
-    font-family: 'Javanese Text';
 }
