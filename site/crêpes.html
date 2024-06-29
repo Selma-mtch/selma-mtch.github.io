@@ -22,7 +22,21 @@
 				<a href="entremets.html"> Recette entremets </a>
 				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
 			</nav>
+			<div class="menuButton" onclick="toggleMenu()">☰</div>
 		</header>
+
+		<div id="pagesMenu">
+			<nav>
+				<a href="menue.html"> Menu </a>
+				<a href="toutes tartes.html"> Recettes tartes </a>
+				<a href="pour le café.html"> Recette pour le café </a>
+				<a href="petit déjeuner.html"> Recettes petit déjeuner </a>
+				<a href="au chocolat.html"> Recettes au chcocolat </a>
+				<a href="anniversaire.html">  Recette anniversaire </a>
+				<a href="entremets.html"> Recette entremets </a>
+				<a href="hors oeuvre.html"> Hors d'oeuvre </a>
+			</nav>
+		</div>
 
 		<main id="content">
 
@@ -39,17 +53,17 @@
 
 			<h2> Préparation:</h2> 
 
-			<h3>
+			<div class="instructions"> 
 				<ol>
 					<li> Mettre la farine, le sel, le sucre et les oeufs dans un saladier.</li>
 					<li> Mixer le tout avec un robot ou un fouet.</li>
 					<li> Ajouter le lait progressivement jusqu'à obtenir une pâte homogène.</li>
 					<li> Dans une poele chaude verser une petite louche de pâte puis retourner au bout de 1 minute. </li>
 				</ol>
-			</h3>
+			</div>
 
 			<div class="container">
-				<img src= "/imagecrepe2.jpg" alt='Image crêpe' class='img'/> 
+				<img src= "/img/imagecrepe2.jpg" alt='Image crêpe' class='img'/> 
 			</div>
 			
 			<h3>
@@ -57,4 +71,14 @@
 			</h3>
 		</main>
 	</body>
+	<script>
+	function toggleMenu() {
+		var menu = document.getElementById('pagesMenu');
+		if (menu.style.display === 'block') {
+		  menu.style.display = 'none';
+		} else {
+		  menu.style.display = 'block';
+		}
+	  }
+	</script>
 </html>
